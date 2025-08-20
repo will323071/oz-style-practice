@@ -1,10 +1,15 @@
-export default function Content({ content }) {
+import React from "react";
+import { ContentContainer } from "../styles";
+
+function Content({content}) {
   return (
-    <div className="content-container">
+    <ContentContainer>
       <img src={content.img} alt={content.title} />
-      <span>모집중</span>
+      <span>{content.tag}</span>
       <div>{content.title}</div>
-      <p>{content.subtitle}</p>
-    </div>
+      <p>{content.desc}</p>
+      </ContentContainer>
   );
 }
+
+export default Content;

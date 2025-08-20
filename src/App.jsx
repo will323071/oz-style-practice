@@ -1,7 +1,7 @@
-import "./App.scss";
-import { contents } from "./assets/data/data";
+import {contents} from "./assets/data/data"
 import Content from "./components/Content";
 import Header from "./components/Header";
+import {Section} from "./styles"; // styled-components 
 
 function App() {
   return (

@@ -1,12 +1,17 @@
-export default function Header() {
+import React from "react";
+import { HeaderContainer } from "../styles";
+
+function Header() {
   return (
-    <header className="header-container">
-      <h1>OZ코딩스쿨</h1>
-      <ul className="menu-container">
-        <li>로그인</li>
-        <li>회원가입</li>
-        <li>내클래스</li>
+    <HeaderContainer>
+      <h1 style={{color: "white"}}>로고</h1>
+      <ul>
+        <li>홈</li>
+        <li>소개</li>
+        <li>연락처</li>
       </ul>
-    </header>
+    </HeaderContainer>
   );
 }
+
+export default Header;
